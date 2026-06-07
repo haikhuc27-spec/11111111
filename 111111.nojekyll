@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h1 style="color:red">TEST CHART</h1>
+<canvas id="test" width="400" height="200"></canvas>
+<script>
+new Chart(document.getElementById('test'), {
+  type: 'bar',
+  data: {
+    labels: ['A','B','C'],
+    datasets: [{ data: [10,20,30], backgroundColor: ['red','blue','green'] }]
+  }
+});
+</script>
+</body>
+</html>
 
